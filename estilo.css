@@ -1,6 +1,9 @@
 .nav-link{
-    color: whitesmoke;
+    color: white;
 }
 #activo{
     color: black;
+}
+#disabled{
+    color: whitesmoke;
 }
