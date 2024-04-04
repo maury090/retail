@@ -9,6 +9,11 @@
     
 </head>
 <body>
+  <header id="header_index" align="right">
+    <a href="" class="header_link">Preunic</a>
+    <a href="" class="header_link">Contactanos</a>
+    <a href="" class="header_link">Beneficios</a>
+  </header>
     <!--barra navegacion-->
     <nav class="navbar navbar-expand-sm bg-warning navbar-light">
       <img src="imagenes/logo_1.jpg" alt="imagen corporativa" style="width:40px;">
@@ -16,20 +21,20 @@
         <ul class="navbar-nav">
           <!--item colapsable-->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" id="activo">Menú de categorias</a>
+            <button class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" id="activo"><a>Menú de categorias</a></button>
             <ul class="dropdown-menu">
                 <li><a href="" class="dropdown-item">item 1</a></li> 
                 <li><a href="" class="dropdown-item">item 2</a></li>
             </ul>
           <!--enlaces otras vistas-->
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <button><a class="nav-link" href="#">Link</a></button>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <button><a class="nav-link" href="#">Link</a></button>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#" id="disabled">Disabled</a>
+            <button><a class="nav-link disabled" href="#" id="disabled">Disabled</a></button>
           </li>
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="" aria-label="Buscar">

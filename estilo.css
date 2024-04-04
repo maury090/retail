@@ -3,7 +3,16 @@
 }
 #activo{
     color: black;
+    
 }
 #disabled{
     color: whitesmoke;
+}
+#header_index{
+    background-color: rgb(38, 110, 218);
+}
+.header_link{
+    color: whitesmoke;
+    text-decoration: none;
+    display: inline-block;
 }
