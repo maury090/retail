@@ -2,17 +2,34 @@
     height: 40px;
     margin-right: 10px;
 }
+
 .enlace_header{
     text-decoration: none;
     color: black;
     padding-right: 20px;
 }
+
 .encabezado{
     background-color: rgb(91, 149, 216);
 }
+
 .nav-link{
     color: black;
 }
+
+.d-item{
+    height: 400px;
+}
+
+.d-image{
+    height: 100%;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+
 /*.encabezado{
     display: flex;
     height: 50px;
