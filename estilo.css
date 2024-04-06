@@ -12,6 +12,9 @@
 .encabezado{
     background-color: rgb(91, 149, 216);
 }
+.encabezado a:hover{
+    color: white;
+}
 
 .nav-link{
     color: black;
@@ -34,3 +37,12 @@ body{
     background-color: rgb(91, 149, 216);
     border-radius: 8px;
 }
+.boton_regreso a:hover{
+    color: white;
+}
+
+.enlaces_boton{
+    color: black;
+    text-decoration: none;
+}
+
