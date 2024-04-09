@@ -46,3 +46,32 @@ body{
     text-decoration: none;
 }
 
+.imagen-logo{
+    width: 25%;
+    height: 25%;
+}
+
+.pie{
+    width: 100%;
+    background-color: rgb(91, 149, 216);
+}
+.logo_pie{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    display: grid;
+    grid-gap: 50px;
+    padding: 15px 0px;
+}
+
+#imagen_pie{
+    width: 100px;
+} 
+
+.rrss a{
+    text-decoration: none;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    color: white;
+}
