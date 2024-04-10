@@ -75,3 +75,29 @@ body{
     line-height: 50px;
     color: white;
 }
+
+.carrito_box{
+    padding-right: 15px;
+}
+.carrito_box a{
+    text-decoration: none;
+    color: black;
+}
+.carrito_box a:hover{
+    color: white;
+}
+#carrito{
+    width: 20px;
+    
+}
+
+.user_box{
+    padding-right: 15px;
+}
+.user_box a{
+    text-decoration: none;
+    color: black;
+}
+.user_box a:hover{
+    color: white;
+}
