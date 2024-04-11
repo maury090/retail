@@ -1,3 +1,9 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
 #logo{
     height: 40px;
     margin-right: 10px;
@@ -36,6 +42,7 @@ body{
 .boton_regreso{
     background-color: rgb(91, 149, 216);
     border-radius: 8px;
+    box-shadow: 2px 2px 8px 4px #d3d3d3d1;  
 }
 .boton_regreso a:hover{
     color: white;
@@ -100,4 +107,41 @@ body{
 }
 .user_box a:hover{
     color: white;
+}
+
+.enlace_med{
+    text-decoration: none;
+}
+
+/*----------------*/
+.carta{
+    border: 1px solid lightgray;
+    box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+    border-radius:15px;
+    justify-content:space-between;
+    padding: 10px;
+    text-align:center;
+}
+
+.imagen_card{
+    width: 50%;
+}
+.enlace_card{
+    background: #6699ff;
+    border-radius:0 0 15px 15px;
+    padding: 10px;
+    text-align:center;
+}
+.enlace_card a{
+    color: white;
+    text-decoration: none;
+}
+
+.thumbnail{
+    border: 1px solid lightgray;
+    box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+    border-radius:15px;
+    justify-content:space-between;
+    padding: 10px;
+    text-align:center;
 }
