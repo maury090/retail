@@ -11,23 +11,28 @@
 
 .enlace_header{
     text-decoration: none;
-    color: black;
+    color: white;
     padding-right: 20px;
 }
 
 .encabezado{
-    background-color: rgb(91, 149, 216);
+    background-color: #5d9dc9;
 }
 .encabezado a:hover{
-    color: white;
-}
-
-.nav-link{
     color: black;
 }
 
+.nav-link{
+    color: white;
+}
+
+
+#nav_bar{
+    background-color: rgba(0,116,200,255);
+}
+
 .d-item{
-    height: 400px;
+    height: 500px;
 }
 
 .d-image{
@@ -40,7 +45,7 @@ body{
 }
 
 .boton_regreso{
-    background-color: rgb(91, 149, 216);
+    background-color: rgba(0,116,200,255);
     border-radius: 8px;
     box-shadow: 2px 2px 8px 4px #d3d3d3d1;  
 }
@@ -49,8 +54,11 @@ body{
 }
 
 .enlaces_boton{
-    color: black;
+    color: white;
     text-decoration: none;
+}
+#enlace_active{
+    color: black;
 }
 
 .imagen-logo{
@@ -60,7 +68,9 @@ body{
 
 .pie{
     width: 100%;
-    background-color: rgb(91, 149, 216);
+    /*background-color: rgb(91, 149, 216)*/;
+    background-color: rgba(0,116,200,255);
+    color: white;
 }
 .logo_pie{
     width: 100%;
@@ -127,7 +137,7 @@ body{
     width: 50%;
 }
 .enlace_card{
-    background: #6699ff;
+    background: rgba(0,116,200,255);
     border-radius:0 0 15px 15px;
     padding: 10px;
     text-align:center;
@@ -148,3 +158,4 @@ body{
 .descuento{
     color: red;
 }
+

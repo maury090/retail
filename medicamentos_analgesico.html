@@ -20,7 +20,7 @@
         </nav>
     </header>
     <!--barra de navegacion-->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-info">
+    <nav class="navbar navbar-expand-sm" id="nav_bar">
       <div class="container-fluid">
         <a class="link_marca" href="javascript:void(0)"><img src="imagenes/logo_farma-removebg-preview.png" alt="" id="logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
@@ -33,7 +33,7 @@
               <a href="home.html" class="nav-link"><strong>Farmacias La Confiable</strong></a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Nuestos productos</a>
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Nuestos productos</a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="medicamentos_analgesico.html">Medicamentos</a></li>
                 <li><a class="dropdown-item" href="#">Cuidado personal</a></li>
@@ -43,27 +43,26 @@
             <li class="nav-item">
               <a class="nav-link" href="ubicaciones.html">Nuestras tiendas</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="javascript:void(0)">Link</a>
-            </li>
+            
           </ul>
-          <ul class="carrito_box">
-            <a href="carrito.html"><i class="fa-solid fa-cart-shopping" id="carrito"></i></a>
-          </ul>
-          <ul class="user_box">
-            <a href="" alt="Iniciar Sesion"><i class="fa-solid fa-user"></i></a>
-          </ul>
+          
           <form class="d-flex">
             <input class="form-control me-3" type="text" placeholder="¿Que estás buscando?">
             <button class="btn btn-primary" type="button">Buscar</button>
           </form>
+          <ul class="carrito_box">
+            <a href="carrito.html"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a>
+          </ul>
+          <ul class="user_box">
+            <a href="" alt="Iniciar Sesion"><i class="fa-solid fa-user" style="color: #ffffff;"></i></a>
+          </ul>
         </div>
       </div>
     </nav>
     <!--navegacion medicamentos-->
     <div class="opciones_medicamentos" align="center">
       <p>¿Que tipo de medicamentos buscas?</p>
-      <button class="boton_regreso"><a href="" class="enlaces_boton"><Strong>Analgesicos</Strong></a></button>
+      <button class="boton_regreso"><a href="" class="enlaces_boton" id="enlace_active"><strong>Analgesicos</strong></a></button>
       <button class="boton_regreso"><a href="" class="enlaces_boton">Anti inflamatorios</a></button>
       <button class="boton_regreso"><a href="" class="enlaces_boton">Antibioticos</a></button>
       <button class="boton_regreso"><a href="" class="enlaces_boton">Anticonceptivo (Oral)</a></button>
@@ -81,14 +80,13 @@
               <img src="imagenes/paracetamol.webp" alt="Lights" style="width:100%" height="">
               <div class="caption">
                 <p><small>Paracetamol 500mg Lab.Chile 16 comprimidos</small></p>
-                
               </div>
             </a>
           </div>
         </div>
         <div class="col-md-3 g-3">
           <div class="thumbnail ">
-            <a href="/w3images/nature.jpg" target="_blank" class="enlace_med">
+            <a href="kitadol.html" target="" class="enlace_med">
               <img src="imagenes/Kitadol_500MG_24C.jpg" alt="Nature" style="width:100%" height="">
               <div class="caption">
                 <p><small>Paracetamol 500mg Kitadol 24 comprimidos</small></p>
@@ -204,7 +202,10 @@
     </div>
     <hr>
 
-    <!--cards-->
+    <div align="center">
+      <button class="boton_regreso"><a href="home.html" class="enlaces_boton">Volver a pagina inicio</a></button>
+    </div>
+    <br>
     
     
     <!--pie de pagina-->

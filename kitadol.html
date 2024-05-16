@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito</title>
+    <title>Medicamentos</title>
+    <!--iconos-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <!--bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="estilo.css">
 </head>
@@ -18,6 +19,7 @@
             <a href="" class="enlace_header">¿Necesitas ayuda?</a>
         </nav>
     </header>
+
     <!--barra de navegacion-->
     <nav class="navbar navbar-expand-sm" id="nav_bar">
         <div class="container-fluid">
@@ -31,8 +33,8 @@
               <li class="nav-item">
                 <a href="home.html" class="nav-link"><strong>Farmacias La Confiable</strong></a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Nuestos productos</a>
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Nuestos productos</a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="medicamentos_analgesico.html">Medicamentos</a></li>
                   <li><a class="dropdown-item" href="#">Cuidado personal</a></li>
@@ -50,7 +52,7 @@
               <button class="btn btn-primary" type="button">Buscar</button>
             </form>
             <ul class="carrito_box">
-              <a href=""><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a>
+              <a href="carrito.html"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a>
             </ul>
             <ul class="user_box">
               <a href="" alt="Iniciar Sesion"><i class="fa-solid fa-user" style="color: #ffffff;"></i></a>
@@ -58,74 +60,39 @@
           </div>
         </div>
       </nav>
-      <!--contenido pagina-->
-      <div class="shopping_kart" align="center">
-        <h3>Tu carrito de compras</h3>
-        <hr><br>
-        <p><strong>Tu carro de compras se encuentra vacío :(</strong></p>
-        <img src="imagenes/carritoVacio-removebg-preview.png" alt="" style="width: 25%">
-        <hr>
-      </div>
-      <!--mensaje promo-->
-      <div class="mensaje_promo" align="center">
-        <h4><strong>Revisa la ofertas que tenemos para ti</strong></h4>
-      </div>
-      <!--promociones-->
-      <div class="contenedor" >
-        <div class="row g-3">
-          <div class="col-12 col-md-6 col-lg-4">
+      <br>
+      <h4 align="center">Paracetamol 500mg Kitadol </h4>
+      <hr>
+      <br><br>
+      <div align="center">
+        <div class="col-5">
             <div class="carta">
-              <p class="descuento"><strong>50% Descuento</strong></p>
+              
               <img src="imagenes/Kitadol_500MG_24C.jpg" alt="" class="imagen_card">
               <div class="cuerpo_card">
-                <h6>Kitadol 500mg 24 comprimidos adulto</h6>
-                <p>Antes: <del>$1500</del></p>
-                <p>Ahora: <strong>$750</strong></p>
+                <br>
+                <p>Nombre: Kitadol</p>
+                <p>Laboratorio: Lab. Chile</p>
+                <p>Mg por comprimido/capsula: 500</p>
+                <p>Cantidad por caja: 24</p>
+                <p><del>Precio normal: $1500</del></p>
+                <p>Precio 50% dscto: $750</p>
+                <p>Venta con receta: No</p>
                 <div class="enlace_card">
-                  <a href="kitadol.html">Ver oferta</a>
+                  <a href="">Añadir al carrito</a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="carta">
-              <p class="descuento"><strong>20% Descuento</strong></p>
-              <img src="imagenes/acido-acetil.jpg" alt="" class="imagen_card">
-              <div class="cuerpo_card">
-                <h6>Acido Saletilsalicilico Mintlab 100 comprimidos</h6>
-                <p>Antes: <del>$3200</del></p>
-                <p>Ahora: <strong>$2560</strong></p>
-                <div class="enlace_card">
-                  <a href="">Ver oferta</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="carta">
-              <p class="descuento"><strong>35% Descuento</strong>
-              </p>
-              <img src="imagenes/gesix-inflamatorio.webp" alt="" class="imagen_card">
-              <div class="cuerpo_card">
-                <h6>Celecoxib 200mg Gesix 10 capsulas</h6>
-                <p>Antes: <del>$14200</del></p>
-                <p>Ahora: <strong>$9230</strong></p>
-                <div class="enlace_card">
-                  <a href="">Ver oferta</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      </div>
+
+      <br><br>
+      <div align="center">
+        <button class="boton_regreso"><a href="home.html" class="enlaces_boton">Volver a medicamentos</a></button>
       </div>
       <br>
-      <!--boton de regreso-->
-    <div align="center">
-      <button class="boton_regreso"><a href="home.html" class="enlaces_boton">Volver a pagina inicio</a></button>
-    </div>
-    <br>
-      
-    <!--pie de pagina-->
+
+      <!--pie de pagina-->
     <footer>
         <div class="pie"align="center">
           <div class="logo_pie">
@@ -144,8 +111,11 @@
           </div>
         </div>
       </footer>
+
+
     <!--script-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    
 </body>
 </html>
