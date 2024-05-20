@@ -164,5 +164,8 @@ body{
     justify-content: center;
 }
 
-
-
+.imagen_catalogo{
+    height: 10%;
+    width: 30%;
+    float: left;
+}
