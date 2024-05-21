@@ -60,26 +60,45 @@
         </div>
       </div>
     </nav>
+    <br>
     <!--carrusel-->
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+    
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      </div>
+
+      <!-- The slideshow/carousel -->
       <div class="carousel-inner">
-        <div class="carousel-item active d-item">
-          <img src="imagenes/marcas_asociadas.jpg" class="d-block w-100 d-image" alt="...">
+        <div class="carousel-item active" align="center">
+          <img src="imagenes/marcas_asociadas.jpg" alt="Los Angeles" class="d-block" style="width:50%">
+          <div class="carousel-caption">
+            
+          </div>
         </div>
-        <div class="carousel-item active d-item">
-          <img src="imagenes/amarillo.jpg" class="d-block w-100 d-image alt="...">
+        <div class="carousel-item" align="center">
+          <img src="imagenes/bioequivalente.webp" alt="Chicago" class="d-block" style="width:50%">
+          <div class="carousel-caption">
+            
+          </div> 
         </div>
-        <div class="carousel-item active d-item">
-          <img src="imagenes/bioequivalente.webp" class="d-block w-100 d-image" alt="...">
+        <div class="carousel-item" align="center">
+          <img src="imagenes/amarillo.jpg" alt="New York" class="d-block" style="width:70%">
+          <div class="carousel-caption">
+            
+          </div>  
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
+
+      <!-- Left and right controls/icons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
       </button>
     </div>
     <br><br>
@@ -100,7 +119,7 @@
               <p>Antes: <del>$1500</del></p>
               <p>Ahora: <strong>$750</strong></p>
               <div class="enlace_card">
-                <a href="kitadol.html">Ver oferta</a>
+                <a href="#">Ver oferta</a>
               </div>
             </div>
           </div>

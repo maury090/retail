@@ -31,12 +31,8 @@
     background-color: rgba(0,116,200,255);
 }
 
-.d-item{
-    height: 500px;
-}
-
-.d-image{
-    height: 100%;
+.d-block{
+    height: 600px;
 }
 
 body{
@@ -50,12 +46,16 @@ body{
     box-shadow: 2px 2px 8px 4px #d3d3d3d1;  
 }
 .boton_regreso a:hover{
-    color: white;
+    color: black;
 }
 
 .enlaces_boton{
     color: white;
     text-decoration: none;
+}
+#enlace_modal{
+    text-decoration: none;
+    color: white;
 }
 #enlace_active{
     color: black;
