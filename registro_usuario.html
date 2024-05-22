@@ -59,18 +59,60 @@
     <div class="">
         <div>
             <h6>Ingresa tu nombre:</h6>
-            <input type="text" class="nombre_registro" name="nombre" id="nombre_usuario" placeholder="Juan">
-            <i class="validacion_registro_fa-sharp fa-solid fa-xmark" style="color: #ff0000;"></i>
+            <input type="text" class="control_formulario1" name="nombre" id="nombre_usuario" placeholder="Juan">
         </div>
         <p class="error_registro">El nombre debe de tener al menos 3 caracteres alfabeticos</p>
     </div>
+    <!--apellido-->
     <div class="">
         <div>
             <h6>Ingresa tu apellido:</h6>
-            <input type="text" class="apellido_registro" name="apellido" id="apellido" placeholder="Lopez">
-            <i class="validacion_registro_fa-sharp fa-solid fa-xmark" style="color: #ff0000;"></i>
+            <input type="text" class="control_formulario1" name="apellido" id="apellido" placeholder="Lopez">
         </div>
         <p class="error_registro">El apellido debe de tener al menos 3 caracteres alfabeticos</p>
+    </div>
+    <!--rut-->
+    <div class="">
+        <div>
+            <h6>Ingresa tu rut con puntos y guion:</h6>
+            <input type="text" class="control_formulario1" name="rut" id="rut" placeholder="12.345.678-9">
+        </div>
+        <p class="error_registro">Ingresa un rut valido</p>
+    </div>
+    <!--correo-->
+    <div class="">
+        <div>
+            <h6>Ingresa tu correo:</h6>
+            <input type="email" class="control_formulario1" name="correo" id="correo" placeholder="algo@correo.com">
+        </div>
+        <p class="error_registro">Ingrese un correo valido</p>
+    </div>
+    <!--contraseña-->
+    <div class="">
+        <div>
+            <h6>Ingresa tu contraseña:</h6>
+            <input type="password" class="control_formulario1" name="clave" id="clave">
+        </div>
+        <p class="error_registro">La contraseña debe tener 6 dígitos alfanumericos</p>
+    </div>
+  <!--confirmar contraseña-->
+    <div class="">
+        <div>
+            <h6>Confirma tu contraseña:</h6>
+            <input type="password" class="control_formulario1" name="clave" id="clave">
+        </div>
+        <p class="error_registro">La contraseña no coincide</p>
+    </div>
+    <br>
+
+    <!--warning-->
+    <div>
+      <p class="mensaje_error"><i class="fa-solid fa-triangle-exclamation" style="color: #fffb00;"></i><b>Error:</b>Rellena el formulario correctamente</p>
+    </div>
+    <!--registrar-->
+    <div>
+      <input type="submit" class="boton_regreso1" value="Completar registro" >
+      <p class="mensaje_registro_satisfactorio" id="aprobado">Usurio registrado exitosamente</p>
     </div>
 </form>
     
@@ -95,6 +137,7 @@
     </div>
   </footer>
 <!--script-->
+<script src="js/validaciones.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
 

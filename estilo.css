@@ -195,6 +195,13 @@ body{
     margin-bottom: 5px;
     border: 1px;
 }
+.control_formulario1{
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    border: 1px;
+}
 
 .boton_regreso1{
     background-color: rgba(0,116,200,255);
@@ -221,3 +228,30 @@ body{
     color: white;
     padding: 30px;
 }
+.error_registro{
+    font-size: 11px;
+    color: red;
+    display: none;
+}
+.error_registro-activo{
+    display: block;
+}
+.mensaje_error{
+    height: 45px;
+    line-height: 45px;
+    background: red;
+    padding: 0 15px;
+    border-radius: 3px;
+    display: none;
+}
+.mensaje_error-activo{
+    display: block;
+}
+.mensaje_registro_satisfactorio{
+    font-size: 14px;
+    display: none;
+}
+.mensaje_registro_satisfactorio-activo{
+    display: block;
+}
+
