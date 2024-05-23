@@ -7,9 +7,7 @@ const expresiones = {
 	clave: /^.{6}$/, // 6 digitos.
 	clave2: /^.{6}$/, // 6 digitos.
 	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-	
 }
-
 const campos = {
 	nombre : false,
 	apellido : false,
@@ -66,7 +64,6 @@ const validarClave2 =()=>{
 		campos[clave]=true;
 	}
 }
-
 inputs.forEach((input) => {
 	input.addEventListener('keyup',validarRegistro);
 	input.addEventListener('blur',validarRegistro);
