@@ -254,4 +254,12 @@ body{
 .mensaje_registro_satisfactorio-activo{
     display: block;
 }
+.formulario_grupo_incorrecto .control_formulario1{
+    border: 3px solid #bb2929;
+}
+.formulario_grupo_correcto .control_formulario1{
+    border: 3px solid green;
+}
+/*mediaquery*/
+
 

@@ -56,7 +56,7 @@
 <!--formulario registro-->
 <!--nombre-->
 <form action="" class="registro" id="registro">
-    <div class="formulario_grupo formulario_grupo-incorrecto" id="grupo_nombre">
+    <div class="formulario_grupo" id="grupo_nombre">
         <div>
             <h6>Ingresa tu nombre:</h6>
             <input type="text" class="control_formulario1" name="nombre" id="nombre_usuario" placeholder="Juan">
@@ -64,10 +64,10 @@
         <p class="error_registro">El nombre debe de tener al menos 3 caracteres alfabeticos</p>
     </div>
     <!--apellido-->
-    <div class="">
+    <div class="formulario_grupo" id="grupo_apellido">
         <div>
             <h6>Ingresa tu apellido:</h6>
-            <input type="text" class="control_formulario1" name="apellido" id="apellido" placeholder="Lopez">
+            <input type="text" class="control_formulario1" name="apellido" id="apellido_usuario" placeholder="Lopez">
         </div>
         <p class="error_registro">El apellido debe de tener al menos 3 caracteres alfabeticos</p>
     </div>
@@ -80,26 +80,26 @@
         <p class="error_registro">Ingresa un rut valido</p>
     </div>
     <!--correo-->
-    <div class="">
+    <div class="formulario_grupo" id="grupo_correo">
         <div>
             <h6>Ingresa tu correo:</h6>
-            <input type="email" class="control_formulario1" name="correo" id="correo" placeholder="algo@correo.com">
+            <input type="email" class="control_formulario1" name="correo" id="correo_usuario" placeholder="algo@correo.com">
         </div>
         <p class="error_registro">Ingrese un correo valido</p>
     </div>
     <!--contraseña-->
-    <div class="">
+    <div class="formulario_grupo" id="grupo_clave">
         <div>
             <h6>Ingresa tu contraseña:</h6>
-            <input type="password" class="control_formulario1" name="clave" id="clave">
+            <input type="password" class="control_formulario1" name="clave" id="clave_usuario">
         </div>
         <p class="error_registro">La contraseña debe tener 6 dígitos alfanumericos</p>
     </div>
   <!--confirmar contraseña-->
-    <div class="">
+    <div class="formulario_grupo" id="grupo_clave2">
         <div>
             <h6>Confirma tu contraseña:</h6>
-            <input type="password" class="control_formulario1" name="clave2" id="clave2">
+            <input type="password" class="control_formulario1" name="clave2" id="clave2_usuario">
         </div>
         <p class="error_registro">La contraseña no coincide</p>
     </div>
