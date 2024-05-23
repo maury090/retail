@@ -7,9 +7,15 @@ const expresiones = {
 	clave: /^.{6}$/, // 6 digitos.
 	clave2: /^.{6}$/, // 6 digitos.
 	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-	telefono: /^\d{7,14}$/ // 7 a 14 numeros.
+	
 }
 
+const campos = {
+	nombre : false,
+	apellido : false,
+	correo : false,
+	clave : false
+}
 const validarRegistro = (e) => {
 	switch (e.target.name){
 		case "nombre":
@@ -18,10 +24,6 @@ const validarRegistro = (e) => {
 
 		case "apellido":
 			validarCampo(expresiones.apellido, e.target, 'apellido');	
-		break;
-
-		case "rut":
-			
 		break;
 
 		case "correo":
@@ -42,9 +44,11 @@ const validarCampo =(expresion, input, campo) => {
 		document.getElementById(`grupo_${campo}`).classList.remove('formulario_grupo_incorrecto')
 		document.getElementById(`grupo_${campo}`).classList.add('formulario_grupo_correcto')
 		document.querySelector(`#grupo_${campo} .error_registro`).classList.remove('error_registro-activo')
+		campos[campo] = true;
 	} else {
 		document.getElementById(`grupo_${campo}`).classList.add('formulario_grupo_incorrecto')
 		document.querySelector(`#grupo_${campo} .error_registro`).classList.add('error_registro-activo')
+		campos[campo] = false;
 	}
 }
 const validarClave2 =()=>{
@@ -53,7 +57,13 @@ const validarClave2 =()=>{
 
 	if(inputClave1.value !== inputClave2.value){
 		document.getElementById(`grupo_clave2}`).classList.add('formulario_grupo_incorrecto')
+		document.getElementById(`grupo_clave2`).classList.remove('formulario_grupo_correcto')
 		document.querySelector(`#grupo_clave2} .error_registro`).classList.add('error_registro-activo')
+		campos[clave]=false;
+	} else {
+		document.getElementById(`grupo_clave2}`).classList.remove('formulario_grupo_incorrecto')
+		document.querySelector(`#grupo_clave2} .error_registro`).classList.remove('error_registro-activo')
+		campos[clave]=true;
 	}
 }
 
@@ -63,4 +73,8 @@ inputs.forEach((input) => {
 });
 registro.addEventListener('submit', (e) => {
 	e.preventDafault();
+
+	if (campos.nombre && campos.apellido && campos.correo && campos.clave){
+		registro.reset();
+	}
 });
